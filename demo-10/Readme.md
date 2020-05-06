@@ -39,7 +39,7 @@
     $ docker logs db1
     ## Connect to MySQL to test data
     $ docker exec -it db1 bash
-    $ mysql -umahendra -ppassword@1234 
+    $ mysql -umahendra -ppass@1234 
     SQL> use mydata;
     SQL> show tables;
     SQL> select * from employees;
