@@ -19,8 +19,7 @@
     ```
     $ docker-compose exec client bash
     $ ping srv
-    $ exit
-    $ docker-compose exec srv bash
-    $ curl http://client
+    $ 
+    $ wget -O - http://srv
     $ exit
     ```

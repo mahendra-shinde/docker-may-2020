@@ -8,8 +8,11 @@ services:
     - net1
 
   client:
-    image: nginx:1.7.9
+    image: busybox
     hostname: client
+    ## Keep client alive for 3 minutes
+    ## After 3 minutes it would EXIT as no process to run !
+    command: sleep 3m
     networks:
     - net1
 
