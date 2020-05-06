@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  srv:
+    image: mysql:5.7
+    environment: 
+      MYSQL_USER: mahendra
+      MYSQL_PASSWORD: pass@1234
+      MYSQL_DATABASE: sample
+      MYSQL_ROOT_PASSWORD: root@1234
+
+    volumes: 
+    - data:/var/lib/mysql
+
+  client:
+    image: adminer
+    ports:
+    - "8080:8080"
+    
+volumes:
+  data:
+    
