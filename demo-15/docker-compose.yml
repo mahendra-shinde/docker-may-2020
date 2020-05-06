@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+  srv:
+    image: nginx:1.7.9
+    hostname: srv
+    volumes: 
+    - data:/data
+    networks: 
+    - net1
+
+  client:
+    image: busybox
+    hostname: client
+    ## Keep client alive for 3 minutes
+    ## After 3 minutes it would EXIT as no process to run !
+    command: sleep 3m
+    volumes: 
+    - data:/data
+    networks:
+    - net1
+
+### docker network create -d bridge net1 --subnet 12.0.0.0/16
+networks:
+  net1:
+    driver: bridge
+
+volumes:
+  data:
+    
