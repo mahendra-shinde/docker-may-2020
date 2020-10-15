@@ -1,6 +1,6 @@
 # Docker demo 2
 
-Running a container in detached mode with PORT-FORWARDING enabled at HOST PORT 8080.
+Running a container in detached mode with PORT-FORWARDING enabled at HOST PORT 8082.
 You can try web browser with URL localhost:8082
 
 ```bash
