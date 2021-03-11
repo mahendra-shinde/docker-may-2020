@@ -9,5 +9,12 @@ $ docker exec -it w1 sh
 $ cd /usr/share/nginx/html
 $ echo "<h1>Hello World</h1>" > index.html
 $ exit
+```
+
+Now, try loading webpage at <http://localhost:8080> you should get `Hello World`.
+Stop and delete the container:
+
+```bash
 $ docker stop w1
+$ docker rm w1
 ```
