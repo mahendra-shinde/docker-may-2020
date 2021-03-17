@@ -8,8 +8,8 @@ $ docker stop e3
 $ docker commit e3 app1
 $ docker rm e3
 ## TEST
-$ docker run -d -p 8080:80 app1
+$ docker run -d -p 8080:80 --name a1 app1
 $ curl localhost:8080
-$ docker stop app1
-$ docker rm app1
+$ docker stop a1
+$ docker rm a1
 ```
