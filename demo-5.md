@@ -9,7 +9,7 @@ Extend the Container Image by using Docker commit.
 
  
 ```bash
-docker run -d --name w1 nginx:1.7.9
+docker run -d --name w1 nginx:1.13.0
 docker exec -it w1 bash
 cd /usr/share/nginx/html
 echo "<h1>Hello World</h1>" > index.html
