@@ -13,7 +13,7 @@ $ docker run -d --name t2 --net net-n nginx:alpine
 $ docker run -d --name t3 --net net-n nginx:alpine
 $ docker run -d --name t4  nginx
 
-$ docker exec -it t1 bash
+$ docker exec -it t1 sh
 $ ping t2
 CTRL+C
 $ ping t3
@@ -24,7 +24,7 @@ $ exit
 ## Test t4
 
 ```bash
-$ docker exec -it t4 bash
+$ docker exec -it t4 sh
 $ ping t1
 ##FAIL WITH ERROR!
 $ exit
