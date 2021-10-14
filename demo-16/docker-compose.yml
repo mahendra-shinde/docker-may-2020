@@ -3,12 +3,15 @@ version: "3.5"
 services:
   srv:
     image: mysql:5.7
+    depends_on: 
+    - client
     environment: 
       MYSQL_USER: mahendra
       MYSQL_PASSWORD: pass@1234
       MYSQL_DATABASE: sample
       MYSQL_ROOT_PASSWORD: root@1234
 
+    # This would result in -v data:/var/lib/mysql in 'docker run'
     volumes: 
     - data:/var/lib/mysql
 
@@ -16,10 +19,7 @@ services:
     image: adminer
     ports:
     - "8080:8080"
-    depends_on: 
-    - srv
 
-
+## This would result in command : `docker volume create data`    
 volumes:
   data:
-    
