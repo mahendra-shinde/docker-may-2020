@@ -12,6 +12,6 @@ $ curl http://localhost:8080
 ## Test in Web browser (Default browser must be set)
 $ start http://localhost:8080
 $ docker stop w1
-# Remove the container 
-$ docker rm w1
+# Container would be auto-removed due to "--rm" in first command
+
 ```
