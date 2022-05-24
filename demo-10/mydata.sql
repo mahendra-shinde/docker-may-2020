@@ -8,3 +8,9 @@ VALUES ('Donald','Duck');
 
 INSERT into employees (firstname, lastname)
 VALUES ('Micky','Mouse');
+
+INSERT into employees (firstname, lastname)
+VALUES ('Mini','Mouse');
+
+INSERT into employees (firstname, lastname)
+VALUES ('Chota','Bhim');

@@ -18,7 +18,7 @@ services:
   client:
     image: adminer
     ports:
-    - "8080:8080"
+    - "9000:8080"
 
 ## This would result in command : `docker volume create data`    
 volumes:
